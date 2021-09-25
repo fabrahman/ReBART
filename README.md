@@ -16,13 +16,19 @@ pip install -r requirements.txt
 First, create the dataset splits and put them in `./data` folder.
 
 Please find the links for the various datasets:
-    * arXiv - https://drive.google.com/drive/folders/0B-mnK8kniGAiNVB6WTQ4bmdyamc
-    * Wiki Movie Plots - https://www.kaggle.com/jrobischon/wikipedia-movie-plots
-    * SIND - http://visionandlanguage.net/VIST/dataset.html
-    * NSF - https://archive.ics.uci.edu/ml/datasets/NSF+Research+Award+Abstracts+1990-2003
-    * ROC - https://www.cs.rochester.edu/nlp/rocstories/
-    * NeurIPS - https://www.kaggle.com/benhamner/nips-papers
-    * AAN - https://github.com/EagleW/ACL_titles_abstracts_dataset
+    1. arXiv - https://drive.google.com/drive/folders/0B-mnK8kniGAiNVB6WTQ4bmdyamc
+
+    2. Wiki Movie Plots - https://www.kaggle.com/jrobischon/wikipedia-movie-plots
+
+    3. SIND - http://visionandlanguage.net/VIST/dataset.html
+
+    4. NSF - https://archive.ics.uci.edu/ml/datasets/NSF+Research+Award+Abstracts+1990-2003
+
+    5. ROC - https://www.cs.rochester.edu/nlp/rocstories/
+
+    6. NeurIPS - https://www.kaggle.com/benhamner/nips-papers
+
+    7. AAN - https://github.com/EagleW/ACL_titles_abstracts_dataset
 
 All datsets should be formatted in jsonl files where each line is a json containing two fields: 'orig_sents', and 'shuf_sents'. 'orig_sents' is a list of markers [y1, y2, ..., yN], which denotes the position of ith sentence of the corresponding ordered sequence in the shuffled input ('shuf_sents'). An example is provided for ROCStories in [here]().
 
@@ -51,5 +57,22 @@ To evaluate the model and get the performance metrics, run:
 
 ```
 python eval/evaluation.py --output_path $MODEL_PATH/test_bart_greedy.jsonl
+```
+
+
+### Citation
+
+If you used our work please cite us using:
+
+```
+@inproceedings{Basu-brahman-chaturvedi-rebart,
+    title = "Is Everything in Order? A Simple Way to Order Sentences",
+    author = "Somnath Basu Roy Chowdhury, Faeze Brahman and
+      Snigdha Chaturvedi",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2021",
+    publisher = "Association for Computational Linguistics",
+}
 ```
 
