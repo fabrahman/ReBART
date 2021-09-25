@@ -16,6 +16,7 @@ pip install -r requirements.txt
 First, create the dataset splits and put them in `./data` folder.
 
 Please find the links for the various datasets:
+
     1. arXiv - https://drive.google.com/drive/folders/0B-mnK8kniGAiNVB6WTQ4bmdyamc
 
     2. Wiki Movie Plots - https://www.kaggle.com/jrobischon/wikipedia-movie-plots
@@ -30,7 +31,7 @@ Please find the links for the various datasets:
 
     7. AAN - https://github.com/EagleW/ACL_titles_abstracts_dataset
 
-All datsets should be formatted in jsonl files where each line is a json containing two fields: 'orig_sents', and 'shuf_sents'. 'orig_sents' is a list of markers [y1, y2, ..., yN], which denotes the position of ith sentence of the corresponding ordered sequence in the shuffled input ('shuf_sents'). An example is provided for ROCStories in [here]().
+All datsets should be formatted in jsonl files where each line is a json containing two fields: `orig_sents`, and `shuf_sents`. `orig_sents` is a list of markers [y1, y2, ..., yN], which denotes the position of ith sentence of the corresponding ordered sequence in the shuffled input (`shuf_sents`). An example is provided for ROCStories in [here]().
 
 ### Train the ReBART model:
 
