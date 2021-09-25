@@ -1,7 +1,9 @@
 This repo contains code for the EMNLP 2021 paper:
 
-** Is Everything in Order? A Simple Way to Order Sentences **
-* Somnath Basu Roy Chowdhury, Faeze Brahman, Snigdha Chaturvedi *
+#Is Everything in Order? A Simple Way to Order Sentences
+*Somnath Basu Roy Chowdhury, Faeze Brahman, Snigdha Chaturvedi* EMNLP 2021
+
+Link to paper [here][https://arxiv.org/pdf/2104.07064.pdf]
 
 ### Pre-requisities
 
@@ -15,21 +17,7 @@ pip install -r requirements.txt
 
 First, create the dataset splits and put them in `./data` folder.
 
-Please find the links for the various datasets:
-
-    1. arXiv - https://drive.google.com/drive/folders/0B-mnK8kniGAiNVB6WTQ4bmdyamc
-
-    2. Wiki Movie Plots - https://www.kaggle.com/jrobischon/wikipedia-movie-plots
-
-    3. SIND - http://visionandlanguage.net/VIST/dataset.html
-
-    4. NSF - https://archive.ics.uci.edu/ml/datasets/NSF+Research+Award+Abstracts+1990-2003
-
-    5. ROC - https://www.cs.rochester.edu/nlp/rocstories/
-
-    6. NeurIPS - https://www.kaggle.com/benhamner/nips-papers
-
-    7. AAN - https://github.com/EagleW/ACL_titles_abstracts_dataset
+Please find the links for the various datasets: [arXiv](https://drive.google.com/drive/folders/0B-mnK8kniGAiNVB6WTQ4bmdyamc), [Wiki Movie Plots](https://www.kaggle.com/jrobischon/wikipedia-movie-plots), [SIND](http://visionandlanguage.net/VIST/dataset.html), [NSF](https://archive.ics.uci.edu/ml/datasets/NSF+Research+Award+Abstracts+1990-2003), [ROCStories](https://www.cs.rochester.edu/nlp/rocstories/), [NeurIPS](https://www.kaggle.com/benhamner/nips-papers), [AAN](https://github.com/EagleW/ACL_titles_abstracts_dataset).
 
 All datsets should be formatted in jsonl files where each line is a json containing two fields: `orig_sents`, and `shuf_sents`. `orig_sents` is a list of markers [y1, y2, ..., yN], which denotes the position of ith sentence of the corresponding ordered sequence in the shuffled input (`shuf_sents`). An example is provided for ROCStories in [here]().
 
