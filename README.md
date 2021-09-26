@@ -1,9 +1,12 @@
+## Is Everything in Order? A Simple Way to Order Sentences
+
 This repo contains code for the EMNLP 2021 paper:
 
-#Is Everything in Order? A Simple Way to Order Sentences
-*Somnath Basu Roy Chowdhury, Faeze Brahman, Snigdha Chaturvedi* EMNLP 2021
+**Is Everything in Order? A Simple Way to Order Sentences**
 
-Link to paper [here][https://arxiv.org/pdf/2104.07064.pdf]
+*Somnath Basu Roy Chowdhury\*, Faeze Brahman\*, Snigdha Chaturvedi* EMNLP 2021
+
+[Link to paper](https://arxiv.org/pdf/2104.07064.pdf)
 
 ### Pre-requisities
 
