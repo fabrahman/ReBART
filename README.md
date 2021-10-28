@@ -22,7 +22,7 @@ First, create the dataset splits and put them in `./data` folder.
 
 Please find the links for the various datasets: [arXiv](https://drive.google.com/drive/folders/0B-mnK8kniGAiNVB6WTQ4bmdyamc), [Wiki Movie Plots](https://www.kaggle.com/jrobischon/wikipedia-movie-plots), [SIND](http://visionandlanguage.net/VIST/dataset.html), [NSF](https://archive.ics.uci.edu/ml/datasets/NSF+Research+Award+Abstracts+1990-2003), [ROCStories](https://www.cs.rochester.edu/nlp/rocstories/), [NeurIPS](https://www.kaggle.com/benhamner/nips-papers), [AAN](https://github.com/EagleW/ACL_titles_abstracts_dataset).
 
-All datsets should be formatted in jsonl files where each line is a json containing two fields: `orig_sents`, and `shuf_sents`. `orig_sents` is a list of markers [y1, y2, ..., yN], which denotes the position of ith sentence of the corresponding ordered sequence in the shuffled input (`shuf_sents`). An example is provided for ROCStories in [here]().
+All datsets should be formatted in jsonl files where each line is a json containing two fields: `orig_sents`, and `shuf_sents`. `orig_sents` is a list of markers [y1, y2, ..., yN], which denotes the position of ith sentence of the corresponding ordered sequence in the shuffled input (`shuf_sents`). An example is provided for ROCStories in [here](https://drive.google.com/drive/folders/1bY7CvXF1q2kgpmtXWtD0NT3bFRfLHpV1?usp=sharing).
 
 ### Train the ReBART model:
 
