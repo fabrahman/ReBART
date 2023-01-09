@@ -10,7 +10,6 @@ sentencepiece==0.1.96
 tensorboardX==2.4
 tokenizers==0.8.0rc4
 torch==1.9.1
-torchaudio==0.9.0a0+a85b239
 torchvision==0.10.0
 tqdm==4.62.3
 transformers==3.0.0
