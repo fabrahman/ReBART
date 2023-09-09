@@ -24,6 +24,8 @@ Please find the links for the various datasets: [arXiv](https://drive.google.com
 
 All datsets should be formatted in jsonl files where each line is a json containing two fields: `orig_sents`, and `shuf_sents`. `orig_sents` is a list of markers [y1, y2, ..., yN], which denotes the position of ith sentence of the corresponding ordered sequence in the shuffled input (`shuf_sents`). An example is provided for ROCStories in [here](https://drive.google.com/drive/folders/1bY7CvXF1q2kgpmtXWtD0NT3bFRfLHpV1?usp=sharing).
 
+The exact data used in our experiments can be found [here](https://drive.google.com/file/d/17r9D_l-jdhHhpLsa86FGuWgeLgeJkQ19/view?usp=sharing).
+
 ### Train the ReBART model:
 
 To train the ReBART model run the following command:
@@ -57,14 +59,19 @@ python eval/evaluation.py --output_path $MODEL_PATH/test_bart_greedy.jsonl
 If you used our work please cite us using:
 
 ```
-@inproceedings{Basu-brahman-chaturvedi-rebart,
+@inproceedings{basu-roy-chowdhury-etal-2021-everything,
     title = "Is Everything in Order? A Simple Way to Order Sentences",
-    author = "Somnath Basu Roy Chowdhury, Faeze Brahman and
-      Snigdha Chaturvedi",
-    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    author = "Basu Roy Chowdhury, Somnath  and
+      Brahman, Faeze  and
+      Chaturvedi, Snigdha",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
     year = "2021",
+    address = "Online and Punta Cana, Dominican Republic",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.841",
+    doi = "10.18653/v1/2021.emnlp-main.841",
+    pages = "10769--10779",
 }
 ```
 
